@@ -23,10 +23,11 @@ public class LoginTest extends BaseTest {
         LoginOptionsScreen loginOptionsScreen = selectAppLanguageScreen.selectLanguage();
         LoginScreen loginScreen = loginOptionsScreen.selectLoginOption("email");
         //ACT
-        HomeScreen homeScreen = loginScreen.enterOrgName((String) credentials.get("username"))
-                .clickNextButton1()
+        HomeScreen homeScreen = loginScreen.enterUserName((String) credentials.get("username"))
+                .clickNextButton()
                 .enterPassword((String) credentials.get("password"))
                 .clickLoginButton();
+        homeScreen.clickOnNoThanksBtn();
 
         //Assert
         Assert.assertTrue(homeScreen.isToolBarDisplayed());

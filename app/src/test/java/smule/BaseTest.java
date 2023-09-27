@@ -1,7 +1,6 @@
 package smule;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import smule.pages.BasePage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import common_utils.TestLogger;
 import org.testng.annotations.Listeners;
 
-import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
 import java.time.Duration;
 

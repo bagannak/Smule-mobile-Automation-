@@ -18,4 +18,8 @@ public class HomeLocators extends BasePage {
 
     @AndroidFindBy(id = "com.smule.singandroid:id/toolbar")
     private WebElement toolBarLocator;
+    @AndroidFindBy(id = "com.smule.singandroid:id/noButton")
+    private WebElement noThanksBtnLocator;
+    @AndroidFindBy(id = "com.smule.singandroid:id/action_message_center")
+    private WebElement messageIconLocator;
 }

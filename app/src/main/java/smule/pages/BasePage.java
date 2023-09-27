@@ -3,15 +3,11 @@ package smule.pages;
 import common_utils.ConfigLoader;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.PageFactory;
 
 import java.net.URL;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class BasePage {
      public static AppiumDriver androidDriver;
