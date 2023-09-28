@@ -16,8 +16,8 @@ public class MessageScreenTest extends BaseTest {
         MessageScreen messageScreen = homeScreen.navigateToMessageScreen();
         //Act
         messageScreen.clickNewChatIcon()
-                .enterUserName("vineettv")
-                .selectUserProfile().
+                .enterUserNameForSearch("alfareedTV")
+                .selectUser().
                 clickOnNextButton().sendMessage("down for the day");
         //Assert
         Assert.assertTrue(messageScreen.isSendMessageBtnClickAble());

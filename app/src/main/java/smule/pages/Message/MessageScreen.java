@@ -12,14 +12,14 @@ public class MessageScreen extends MessageLocators {
         return this;
     }
 
-    public MessageScreen enterUserName(String name){
+    public MessageScreen enterUserNameForSearch(String name){
         searchUserLocator.sendKeys(name);
-        searchUserLocator.sendKeys(Keys.ENTER);
+        searchUserLocator.click();
         return this;
     }
 
-    public MessageScreen selectUserProfile(){
-        profileImageLocator.click();
+    public MessageScreen selectUser(){
+        userNameLocator.click();
         return this;
     }
  public MessageScreen clickOnNextButton(){

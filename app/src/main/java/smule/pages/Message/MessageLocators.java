@@ -19,8 +19,8 @@ public class MessageLocators extends BasePage {
     WebElement newChatIconLocator;
     @AndroidFindBy(id = "com.smule.singandroid:id/search_edit_text")
     WebElement searchUserLocator;
-    @AndroidFindBy(id = "com.smule.singandroid:id/multiple_portrait_profile_image")
-    WebElement profileImageLocator;
+    @AndroidFindBy(xpath = "(//android.widget.ListView[@resource-id='com.smule.singandroid:id/user_list']/android.widget.LinearLayout)[1]")
+    WebElement userNameLocator;
     @AndroidFindBy(id = "com.smule.singandroid:id/action_next")
     WebElement nextBtnLocator;
     @AndroidFindBy(id = "com.smule.singandroid:id/inputBox")
