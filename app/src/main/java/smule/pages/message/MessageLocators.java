@@ -1,4 +1,4 @@
-package smule.pages.Message;
+package smule.pages.message;
 
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;

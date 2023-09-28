@@ -1,4 +1,4 @@
-package smule.pages.Login;
+package smule.pages.login;
 
 
 public class LoginOptionsScreen extends LoginOptionLocators {

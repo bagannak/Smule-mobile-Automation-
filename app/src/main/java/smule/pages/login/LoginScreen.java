@@ -1,9 +1,9 @@
-package smule.pages.Login;
+package smule.pages.login;
 
 import common_utils.ConfigLoader;
 import common_utils.FilePaths;
 import io.qameta.allure.Step;
-import smule.pages.Home.HomeScreen;
+import smule.pages.home.HomeScreen;
 import smule.pages.selectapplanguage.SelectAppLanguageScreen;
 
 import java.util.Map;

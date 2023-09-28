@@ -3,9 +3,9 @@ package smule.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import smule.BaseTest;
-import smule.pages.Home.HomeScreen;
-import smule.pages.Login.LoginScreen;
-import smule.pages.Message.MessageScreen;
+import smule.pages.home.HomeScreen;
+import smule.pages.login.LoginScreen;
+import smule.pages.message.MessageScreen;
 
 public class MessageScreenTest extends BaseTest {
     @Test

@@ -2,9 +2,9 @@ package smule.tests;
 
 import common_utils.ConfigLoader;
 import common_utils.FilePaths;
-import smule.pages.Home.HomeScreen;
-import smule.pages.Login.LoginOptionsScreen;
-import smule.pages.Login.LoginScreen;
+import smule.pages.home.HomeScreen;
+import smule.pages.login.LoginOptionsScreen;
+import smule.pages.login.LoginScreen;
 import smule.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;

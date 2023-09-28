@@ -1,4 +1,4 @@
-package smule.pages.Login;
+package smule.pages.login;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;

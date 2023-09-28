@@ -3,8 +3,8 @@ package smule.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import smule.BaseTest;
-import smule.pages.Login.LoginOptionsScreen;
-import smule.pages.Login.LoginScreen;
+import smule.pages.login.LoginOptionsScreen;
+import smule.pages.login.LoginScreen;
 import smule.pages.selectapplanguage.SelectAppLanguageScreen;
 
 public class LoginOptionsTest extends BaseTest {

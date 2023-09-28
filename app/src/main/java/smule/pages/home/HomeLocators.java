@@ -1,8 +1,7 @@
-package smule.pages.Home;
+package smule.pages.home;
 
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.pagefactory.iOSBy;
 import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -22,4 +21,6 @@ public class HomeLocators extends BasePage {
     private WebElement noThanksBtnLocator;
     @AndroidFindBy(id = "com.smule.singandroid:id/action_message_center")
     private WebElement messageIconLocator;
+    @AndroidFindBy(id = "com.smule.singandroid:id/pre_search_left_button")
+    private WebElement searchBtnLocator;
 }
