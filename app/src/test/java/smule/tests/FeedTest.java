@@ -3,21 +3,20 @@ package smule.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import smule.BaseTest;
+import smule.pages.feed.FeedScreen;
 import smule.pages.home.HomeScreen;
 import smule.pages.login.LoginScreen;
-import smule.pages.search.SearchScreen;
 
-public class SearchTest extends BaseTest {
+public class FeedTest extends BaseTest {
     @Test
-    public void shouldTestSearch() {
+    public void shouldTestIsFeedCardDisplayed() {
         //Arrange
         HomeScreen homeScreen = new LoginScreen().navigateToHomeScreen();
         homeScreen.clickOnNoThanksBtn();
-        SearchScreen searchScreen = homeScreen.clickOnSearchButton();
-        String text = "Heeriye";
         //Act
-        searchScreen.enterText(text).clickOnSearchResult();
+        FeedScreen feedScreen = homeScreen.navigateToFeedScreen();
         //Assert
-        Assert.assertTrue(searchScreen.isListOfSearchResultDisplayed());
+        Assert.assertTrue(feedScreen.isFeedCardDisplayed());
+        Assert.assertTrue(feedScreen.isPlayButtonClickable());
     }
 }

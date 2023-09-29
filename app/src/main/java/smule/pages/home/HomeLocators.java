@@ -23,4 +23,7 @@ public class HomeLocators extends BasePage {
     private WebElement messageIconLocator;
     @AndroidFindBy(id = "com.smule.singandroid:id/pre_search_left_button")
     private WebElement searchBtnLocator;
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@index = '0']/android.widget.FrameLayout[@index='1']")
+    private WebElement feedButton;
+
 }

@@ -1,6 +1,7 @@
 package smule.pages.home;
 
 import io.qameta.allure.Step;
+import smule.pages.feed.FeedScreen;
 import smule.pages.message.MessageScreen;
 import smule.pages.ScreenActions;
 import smule.pages.search.SearchScreen;
@@ -25,7 +26,11 @@ public class HomeScreen extends HomeLocators {
         getSearchBtnLocator().click();
         return new SearchScreen();
     }
-
+    @Step("Navigate to Feed Screen")
+    public FeedScreen navigateToFeedScreen(){
+        getFeedButton().click();
+        return new FeedScreen();
+    }
     public boolean isToolBarDisplayed() {
         return getToolBarLocator().isDisplayed();
     }
