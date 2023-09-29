@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
 
     Map credentials = new ConfigLoader().getJSON(FilePaths.CREDENTIALS);
 
-    @Test(description = "Test login in App")
+    @Test(description = "Test login in App",groups ={"run-all","sanity"})
     public void testLoginInApp() {
         //Arrange
         SelectAppLanguageScreen selectAppLanguageScreen = new SelectAppLanguageScreen();

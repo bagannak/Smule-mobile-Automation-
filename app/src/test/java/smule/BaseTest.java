@@ -16,19 +16,19 @@ import java.time.Duration;
 public class BaseTest {
 
     AppiumDriver androidDriver;
-    @BeforeClass
+    @BeforeClass(groups = {"run-all","sanity"})
     public void setUp(){
         androidDriver = new BasePage().getDriver();
         androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"run-all","sanity"})
     public void beforeMethod(Method m){
         TestLogger.info("STARTING TEST: " + m.getName());
         TestLogger.info("THREAD ID: " + Thread.currentThread().getId());
     }
 
-    @AfterClass
+    @AfterClass(groups = {"run-all","sanity"})
     public void tearDown() {
         androidDriver.quit();
         TestLogger.shutdown();

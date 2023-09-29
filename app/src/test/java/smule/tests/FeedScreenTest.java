@@ -7,8 +7,8 @@ import smule.pages.feed.FeedScreen;
 import smule.pages.home.HomeScreen;
 import smule.pages.login.LoginScreen;
 
-public class FeedTest extends BaseTest {
-    @Test
+public class FeedScreenTest extends BaseTest {
+    @Test(groups = {"run-all","sanity"})
     public void shouldTestIsFeedCardDisplayed() {
         //Arrange
         HomeScreen homeScreen = new LoginScreen().navigateToHomeScreen();

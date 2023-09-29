@@ -8,7 +8,7 @@ import smule.pages.login.LoginScreen;
 import smule.pages.search.SearchScreen;
 
 public class SearchTest extends BaseTest {
-    @Test
+    @Test(groups = {"run-all","sanity"})
     public void shouldTestSearch() {
         //Arrange
         HomeScreen homeScreen = new LoginScreen().navigateToHomeScreen();

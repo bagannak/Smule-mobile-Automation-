@@ -7,8 +7,8 @@ import smule.pages.home.HomeScreen;
 import smule.pages.login.LoginScreen;
 import smule.pages.message.MessageScreen;
 
-public class HomeTest extends BaseTest {
-    @Test
+public class HomeScreenTest extends BaseTest {
+    @Test(groups = {"run-all","sanity"})
     public void shouldTestNavigateToMessageScreen(){
         //Arrange
         LoginScreen loginScreen = new LoginScreen();

@@ -8,7 +8,7 @@ import smule.pages.login.LoginScreen;
 import smule.pages.message.MessageScreen;
 
 public class MessageScreenTest extends BaseTest {
-    @Test
+    @Test(groups = {"run-all","sanity"})
     public void shouldTestSendMessage() throws InterruptedException {
         //Arrange
         HomeScreen homeScreen = new LoginScreen().navigateToHomeScreen();

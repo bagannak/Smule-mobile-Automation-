@@ -8,7 +8,7 @@ import smule.pages.activity.ActivityScreen;
 import smule.pages.home.HomeScreen;
 import smule.pages.login.LoginScreen;
 
-public class ActivityTest extends BaseTest {
+public class ActivityScreenTest extends BaseTest {
     ActivityScreen activityScreen;
     @BeforeClass
     public void setUpActivityScreen(){
@@ -18,7 +18,7 @@ public class ActivityTest extends BaseTest {
         //Act
         activityScreen = homeScreen.navigateToActivityScreen();
     }
-    @Test
+    @Test(groups = "run-all")
     public void shouldTestNotifications(){
         //Act
         boolean notificationListDisplayed = activityScreen.navigateToNotifications().isNotificationListDisplayed();
@@ -26,14 +26,14 @@ public class ActivityTest extends BaseTest {
         Assert.assertTrue(notificationListDisplayed);
     }
 
-    @Test
+    @Test(groups = "run-all")
     public void shouldTestInvites(){
         //Act
         boolean inviteItemDisplayed = activityScreen.navigateToInvites().isInviteItemDisplayed();
         //Assert
         Assert.assertTrue(inviteItemDisplayed);
     }
-    @Test
+    @Test(groups = "run-all")
     public void shouldTestNews(){
         //Act
         String text = activityScreen.navigateToNew().getText();

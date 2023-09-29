@@ -72,8 +72,13 @@ application {
     // Define the main class for the application.
     mainClass = 'smule.App'
 }
-
-tasks.named('test') {
-    // Use TestNG for unit tests.
-    useTestNG()
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+}
+task runSanityTests(type: Test){
+    useTestNG() {
+        suites 'src/test/resources/sanity.xml'
+    }
 }

@@ -6,8 +6,8 @@ import smule.BaseTest;
 import smule.pages.login.LoginOptionsScreen;
 import smule.pages.selectapplanguage.SelectAppLanguageScreen;
 
-public class SelectAppLanguageScreenTest extends BaseTest {
-    @Test
+public class SelectAppLanguageTest extends BaseTest {
+    @Test(groups = {"run-all","sanity"})
     public void shouldTestSelectLanguage(){
         //Arrange
         SelectAppLanguageScreen selectAppLanguageScreen = new SelectAppLanguageScreen();
