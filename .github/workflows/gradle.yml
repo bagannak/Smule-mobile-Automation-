@@ -1,0 +1,22 @@
+name : Run appium tests in github actions
+on : push
+
+jobs:
+  run-mobile-tests:
+    runs-on: macos-latest
+
+    steps:
+      - name : pull the project in to the runner
+        uses: actions/checkout@v3
+
+      - name : setup appium
+        run : |
+          npm install -g appium@v2.1.2
+          appium -v
+          appium @>/dev/null &
+
+      - name : run tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level : 29
+          script : gradle runall
